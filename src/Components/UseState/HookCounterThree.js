@@ -8,6 +8,7 @@ function HookCounterThree() {
 			<input
 				type="text"
 				value={name.firstName}
+                // useState doesnot merge and update object so have to use spread operator
 				onChange={e => setName({ ...name, firstName: e.target.value })}
 			/>
 			<input
